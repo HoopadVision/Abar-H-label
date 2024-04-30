@@ -11,10 +11,10 @@ Labels whose values are unrecognizable are put in the unknown folder.
 
 ## Label Structure
 Labels that this software processes must be stored with a naming structure:
-`123..``Char``12345``_``DatetimeToStr``.Format`
+`123..C12345_DatetimeToStr.Format`
 Sample: `319Q87131_16601459966049.png`
 The characters after _ are removed and the characters before it are the same as the license plate number.
 These are changed based on a certain format and finally become in a format like this:
-`12``Char``12345``.Format`
+`12C12345.Format`
 Sample: `39Q87123.png`
 ![ScreenShot](./screenshot.png)
