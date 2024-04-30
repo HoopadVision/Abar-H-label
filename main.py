@@ -117,6 +117,17 @@ def next():
     os.remove(image_dir)
     show_random_image()
 
+def number_label():
+    Labels = len(os.listdir(directory))
+    outputs = len(os.listdir(output_directory))
+    unknowns = len(os.listdir(unknown))
+    messagebox.showinfo("Number of Labels",
+    f"""
+    Number of labels: {Labels}
+    Number of output labels: {outputs}
+    Number of unknown labels: {unknowns}
+    """)
+
 def file_structure():
     messagebox.showinfo("Folder Structure",
 '''
@@ -151,6 +162,8 @@ menubar.add_cascade(label="Action", menu=file)
 file.add_command(label="Next photo without operation", command=show_random_image)
 file.add_command(label="Next photo", command=next)
 file.add_command(label="Unknown", command=unknown_image)
+file.add_command(label="Number of labels", command=number_label)
+num_of_labels = tk.Menu(menubar, tearoff=0)
 help = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="help", menu=help)
 help.add_command(label="Folder structure", command=file_structure)
