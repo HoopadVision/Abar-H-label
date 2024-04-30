@@ -10,11 +10,11 @@ The labels whose values are reviewed and recorded are stored in the output_dir f
 Labels whose values are unrecognizable are put in the unknown folder.
 
 ## Label Structure
-Labels that this software processes must be stored with a naming structure:
-`123..C12345_DatetimeToStr.Format`
-Sample: `319Q87131_16601459966049.png`
-The characters after _ are removed and the characters before it are the same as the license plate number.
-These are changed based on a certain format and finally become in a format like this:
-`12C12345.Format`
-Sample: `39Q87123.png`
-![ScreenShot](./screenshot.png)
+Labels that this software processes must be stored with a naming structure: <br>
+`123..C12345_DatetimeToStr.Format` <br>
+Sample: `319Q87131_16601459966049.png` <br>
+The characters after _ are removed and the characters before it are the same as the license plate number. <br>
+These are changed based on a certain format and finally become in a format like this: <br>
+`12C12345.Format` <br>
+Sample: `39Q87123.png` <br>
+![ScreenShot](./screenshot.png) 
