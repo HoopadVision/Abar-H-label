@@ -16,5 +16,5 @@ Sample: `319Q87131_16601459966049.png` <br>
 The characters after _ are removed and the characters before it are the same as the license plate number. <br>
 These are changed based on a certain format and finally become in a format like this: <br>
 `12C12345.Format` <br>
-Sample: `39Q87123.png` <br>
+Sample: `39Q87123.png` <br><br>
 ![ScreenShot](./screenshot.png) 
