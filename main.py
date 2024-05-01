@@ -5,6 +5,7 @@ import random
 import shutil
 from tkinter import messagebox
 
+
 directory = "images"
 unknown = "unknown"
 output_directory = "output_dir"
@@ -159,10 +160,10 @@ menubar = tk.Menu(root)
 root.config(menu=menubar)
 file = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Action", menu=file)
-file.add_command(label="Next photo without operation", command=show_random_image)
+file.add_command(label="Number of labels", command=number_label)
+file.add_command(label="Skip", command=show_random_image)
 file.add_command(label="Next photo", command=next)
 file.add_command(label="Unknown", command=unknown_image)
-file.add_command(label="Number of labels", command=number_label)
 num_of_labels = tk.Menu(menubar, tearoff=0)
 help = tk.Menu(menubar, tearoff=0)
 menubar.add_cascade(label="help", menu=help)
@@ -184,20 +185,25 @@ en3.grid(row=0, column=2)
 en4.grid(row=0, column=3)
 
 
-space = tk.Label(frame, text="", width=2)
 
-button = tk.Button(frame, text="Next Image", width=20, height=3,command=next)
-unknows_btn = tk.Button(frame, text="Unknown", height=3,command=unknown_image)
 image_name_entry = tk.Entry(root)
 image_label.pack()
 
+space = tk.Label(frame, text="", width=1)
+space1 = tk.Label(frame, text="", width=1)
+button = tk.Button(frame, text="Next Image", width=15, height=3, command=next)
+unknows_btn = tk.Button(frame, text="Unknown", height=3, width=7, command=unknown_image)
+skip_btn = tk.Button(frame, text="Skip", height=3, width=7, command=show_random_image)
+
 label.pack()
-# sample_panel_plate.pack()
 plate_frame.pack()
+
+
+unknows_btn.grid(row=0, column=4)
 space.grid(row=0, column=1)
-# image_name_entry.pack()
-unknows_btn.grid(row=0, column=2)
-button.grid(row=0, column=0)
+button.grid(row=0, column=2)
+space1.grid(row=0, column=3)
+skip_btn.grid(row=0, column=0)
 frame.pack()
 
 os.makedirs(output_directory, exist_ok=True)
