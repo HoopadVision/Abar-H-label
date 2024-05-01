@@ -89,7 +89,7 @@ def convert():
         if e2 == i:
             e2 = list(characters.keys())[x]
         x += 1
-    return f"{e1}{e2}{e3}{e4}"
+    return f"{e1}_{e2}_{e3}_{e4}"
 
 
 
@@ -184,6 +184,7 @@ en3.grid(row=0, column=2)
 en4.grid(row=0, column=3)
 
 
+space = tk.Label(frame, text="", width=2)
 
 button = tk.Button(frame, text="Next Image", width=20, height=3,command=next)
 unknows_btn = tk.Button(frame, text="Unknown", height=3,command=unknown_image)
@@ -193,10 +194,10 @@ image_label.pack()
 label.pack()
 # sample_panel_plate.pack()
 plate_frame.pack()
-
+space.grid(row=0, column=1)
 # image_name_entry.pack()
-unknows_btn.pack(side=tk.RIGHT)
-button.pack(side=tk.LEFT)
+unknows_btn.grid(row=0, column=2)
+button.grid(row=0, column=0)
 frame.pack()
 
 os.makedirs(output_directory, exist_ok=True)
