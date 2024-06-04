@@ -74,7 +74,11 @@ def show_random_image():
                 en3.insert(0, x[1][0:3])
                 en4.insert(0, x[1][-2:])
     except:
-        messagebox.showerror('Error reading images', "Please check if the images folder exists or if this folder is not empty.")
+        messagebox.showerror('Error reading images', """This error is caused by two possibilities:
+1. The images folder not exists.
+2. There is a problem with the scanned image. 
+
+To fix the possible problem, option 2 on the unknown button.""")
             
         
     
