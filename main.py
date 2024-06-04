@@ -78,7 +78,7 @@ def show_random_image():
 1. The images folder not exists.
 2. There is a problem with the scanned image. 
 
-To fix the possible problem, option 2 on the unknown button.""")
+To fix the possible problem, option 2 on the skip button.""")
             
         
     
