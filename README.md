@@ -16,8 +16,8 @@ Labels that this software processes must be stored with a naming structure:
 The characters after _ are removed and the characters before it are the same as the license plate number.
 
 These are changed based on a certain format and finally become in a format like this:
-- Pattern: `12C12345_Gregorian seconds.Format`.
-- Sample: `39Q87123_1719648615.5914452.png`.
+- Pattern: `12_C_123_45_Gregorian seconds.Format`.
+- Sample: `39_Q_871_23_1719648615.5914452.png`.
 
 ![ScreenShot](./screenshot.png) 
 
