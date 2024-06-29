@@ -4,6 +4,7 @@ import os
 import random
 import shutil
 from tkinter import messagebox
+import time
 
 
 directory = "images"
@@ -94,7 +95,7 @@ def convert():
         if e2 == i:
             e2 = list(characters.keys())[x]
         x += 1
-    return f"{e1}_{e2}_{e3}_{e4}"
+    return f"{e1}_{e2}_{e3}_{e4}_{time.time()}"
 
 
 
