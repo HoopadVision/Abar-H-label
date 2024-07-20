@@ -19,6 +19,40 @@ These are changed based on a certain format and finally become in a format like 
 - Pattern: `12_C_123_45_Gregorian seconds.Format`.
 - Sample: `39_Q_871_23_1719648615.5914452.png`.
 
+## Supported characters
+```python
+characters = {
+    "A" : "الف",
+    "B" : "ب",
+    "C" : "ج",
+    "D" : "ل",
+    "E" : "م",
+    "F" : "ن",
+    "G" : "ق",
+    "H" : "و",
+    "I" : "ه",
+    "J" : "ی",
+    "K" : "د",
+    "L" : "س",
+    "M" : "ص",
+    "N" : "معلول",
+    "N" : "ژ",
+    "O" : "ت",
+    "P" : "ط",
+    "Q" : "ع",
+    "R" : "D",
+    "S" : "S",
+    "T" : "پ",
+    "U" : "تشریفات",
+    "V" : "ث",
+    "W" : "ز",
+    "X" : "ش",
+    "Y" : "ف",
+    "Z" : "ک",
+    "_" : "گ"
+}
+```
+
 ![ScreenShot](./screenshot.png) 
 
 ## Operating system executable output
